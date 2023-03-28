@@ -1,0 +1,18 @@
+
+1\ analyse the object of D in the debug watch window, and confirm each B and C have their own A sub object embedded in them. 
+Changing a private member variable of one of the subobject A, does not get reflected in the other sub object
+
+2\  introduce the keyword virtual to see how diamond problem or ambiguity is resolved
+
+3\  analysing the object of D in the debug watch window, and confirming its the common grandparent shared by the D obj (grandchild)
+
+4\ 
+A
+		void* vptr;--------------------> 0th--00999--> A::show() 
+		int a;
+
+B
+		void* vptr;--------------------> 0th--00999--> B::show() 
+		int a;
+
+object B is composed of a sub object A

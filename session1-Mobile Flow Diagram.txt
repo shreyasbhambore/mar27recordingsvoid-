@@ -1,0 +1,16 @@
+	iunknownclass
+		virtual addref() = 0
+		
+	catbaseunknown
+		addref() {}
+	
+imobile:virtual catbaseunknown 	icalc:virtual cbu
+
+
+		cmobile
+		    //imobile::addref()
+		    //icalc::addref()
+
+		   pmob->addref()
+
+	 
